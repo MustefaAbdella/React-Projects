@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-left .logo img {
+  width: auto;
+  height: 40px;
+}
+
+.delivery-location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delivery-location .delivery-duration {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.searchBar-container {
+  
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}

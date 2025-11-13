@@ -230,6 +230,7 @@ body {
   background-color: #1f1f41;
   padding: 15px;
   min-width: 100%;
+  height: 80px;
   border-radius: 10px;
   margin-bottom: 20px;
   overflow-wrap: break-word;
