@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import '../App.css';
 import { useStoreContext } from './StoreContext';
 const Sidebar = () => {
@@ -8,11 +8,24 @@ const Sidebar = () => {
   const openAddBoardModal = () => setIsBoardModalOpen(true);
 
   const [menuOpenId, setMenuOpenId] = useState(null);
+  const menuRef = useRef(null);
 
   const toggleMenu = (boardId, e) => {
     e.stopPropagation();  // prevent triggering setActiveBoard
     setMenuOpenId(menuOpenId === boardId ? null : boardId);
   }
+
+  // Handle outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setMenuOpenId(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
 
 
   return (
@@ -34,12 +47,14 @@ const Sidebar = () => {
             <i className="fa-solid fa-ellipsis-vertical menu-toggle"
               onClick={(e) => toggleMenu(board.id, e)}>
             </i>
-            {menuOpenId === board.id && (
-              <div className='board-menu' onClick={(e) => e.stopPropagation()}>
-                <button onClick={() => openEditModal(board)}>Edit Board</button>
-                <button className='delete' onClick={() => handleDeleteBoard(board.id)}>Delete Board</button>
-              </div>
-            )}
+            <div className="toggle" ref={menuRef}>
+              {menuOpenId === board.id && (
+                <div className='board-menu' onClick={(e) => e.stopPropagation()}>
+                  <button onClick={() => openEditModal(board)}>Edit Board</button>
+                  <button className='delete' onClick={() => handleDeleteBoard(board.id)}>Delete Board</button>
+                </div>
+              )}
+            </div>
           </li>
         ))}
       </ul>
