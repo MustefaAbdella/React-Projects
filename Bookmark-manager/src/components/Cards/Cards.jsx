@@ -1,16 +1,16 @@
 import React from 'react'
 import './Cards.css'
 import { Icon } from '@iconify/react'
-const Cards = () => {
+const Cards = ({ ...bookmark }) => {
   return (
     <div className='card-container'>
       <div className="card-detail">
         <div className="card-header">
           <div className="card-title">
-            <div className='bookmark-icon'><img src="./frontendmentor.svg" alt="" /></div>
+            <div className='bookmark-icon'><img src={bookmark.favicon} alt="" /></div>
             <div className='title-and-link'>
-              <h2>Frontend Mentor</h2>
-              <a href="#">frontendmentor.io</a>
+              <h2>{bookmark.title}</h2>
+              <a href="#">{bookmark.url}</a>
             </div>
           </div>
           <div className='toggle-menu'>
@@ -19,23 +19,20 @@ const Cards = () => {
         </div>
         <div className="card-content">
           <div className='bookmark-description'>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Eius doloribus, nesciunt earum voluptatem ea laborum iure id quod tenetur.
-              Eius minus.
-            </p>
+            <p>{bookmark.description}</p>
           </div>
           <div className="bookmark-tags">
-            <span>Practice</span>
-            <span>Learning</span>
-            <span>Community</span>
+            <span>{bookmark.tags[0]}</span>
+            <span>{bookmark.tags[1]}</span>
+            <span>{bookmark.tags[2]}</span>
           </div>
         </div>
       </div>
       <div className="card-footer">
         <div className="time-stamp">
-          <span className='watches'><Icon icon='mdi:eye-outline' className='watch-icon' /> 30</span>
-          <span className='last-watched'><Icon icon='ic:outline-watch-later' /> 19 Oct</span>
-          <span className='created-date'><Icon icon='majesticons:calendar-line' /> 23 Nov</span>
+          <span className='watches'><Icon icon='mdi:eye-outline' className='watch-icon' /> {bookmark.visitCount}</span>
+          <span className='last-watched'><Icon icon='ic:outline-watch-later' />{bookmark.createdAt}</span>
+          <span className='created-date'><Icon icon='majesticons:calendar-line' />{bookmark.lastVisited}</span>
         </div>
         <span className='pin'><Icon icon='tabler:pinned' /></span>
       </div>

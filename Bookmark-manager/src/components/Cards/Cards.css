@@ -1,6 +1,7 @@
 .card-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 15px;
   background-color: #fff;
   border-radius: 10px;
@@ -10,7 +11,7 @@
   display: flex;
   flex-direction: column;
   padding: 15px 15px 0;
-  gap: 15px;
+  gap: 12px;
 }
 
 .card-header {
@@ -29,7 +30,7 @@
 
 .card-header .card-title .bookmark-icon {
   background-color: #fff;
-  padding: 8px;
+  padding: 2px;
   border: 1px solid #e2e2e2;
   border-radius: 5px;
   display: flex;
@@ -39,8 +40,8 @@
 }
 
 .card-header .card-title img {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 .card-header .card-title .title-and-link {
@@ -73,7 +74,7 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .card-content .bookmark-description {
@@ -114,7 +115,7 @@
 .card-footer .time-stamp span {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 13px;
   color: #444;
   gap: 6px;
 }

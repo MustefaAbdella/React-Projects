@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react'
 import './Main.css'
 import NavBar from '../NavBar/NavBar'
 import Cards from '../Cards/Cards'
+import { bookmarks } from '../../data.json'
 
 const Main = () => {
   return (
@@ -16,15 +17,9 @@ const Main = () => {
           </div>
         </div>
         <div className="bookmark-cards">
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+          {bookmarks.map((bookmark) => (
+            <Cards key={bookmark.id} {...bookmark} />
+          ))}
         </div>
       </div>
     </div>

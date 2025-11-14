@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .sidebar-wrapper .title h1 {
@@ -41,6 +41,7 @@
   font-size: 14px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .home-archive .home,
