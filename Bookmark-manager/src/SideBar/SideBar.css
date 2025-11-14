@@ -1,8 +1,8 @@
 .sidebar {
-  width: 260px;
+  width: 280px;
   min-height: 100vh;
   background-color: white;
-  border-right: 1px solid #999;
+  border-right: 1px solid #e2e2e2;
 }
 
 .sidebar-wrapper {
@@ -15,12 +15,13 @@
 .sidebar-wrapper .title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 14px;
 }
 
 .sidebar-wrapper .title h1 {
   font-size: 16px;
+  font-weight: 800;
 }
 
 .sidebar-wrapper .title .title-icon {
@@ -37,7 +38,7 @@
 }
 
 .home-archive {
-  font-size: 13px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -50,6 +51,7 @@
   color: #444;
   padding: 6px 8px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .home-archive .home {
@@ -70,7 +72,7 @@
 }
 
 .tags-category h2 {
-  font-size: 12px;
+  font-size: 10px;
   color: #888;
   margin-bottom: 10px;
 }
@@ -78,22 +80,18 @@
 .tags-category .tags-list {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .tags-category .tags-list .individual-tags {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .tags-category .tags-list .individual-tags .tag-name {
   display: flex;
   gap: 8px;
-}
-
-.tags-category .tags-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
 
 .tags-category .tags-list .individual-tags {

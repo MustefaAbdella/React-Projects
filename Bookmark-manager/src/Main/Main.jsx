@@ -2,13 +2,30 @@ import React from 'react'
 import { Icon } from '@iconify/react'
 import './Main.css'
 import NavBar from '../components/NavBar/NavBar'
+import Cards from '../components/Cards/Cards'
 
 const Main = () => {
   return (
     <div className='main-content'>
       <NavBar />
-      <div className="bookmark-grid">
-        Grid content
+      <div className="grid-container">
+        <div className="header-container">
+          <div className="header">
+            <h1>All bookmarks</h1>
+            <button><Icon icon='mdi:sort' />Sort by</button>
+          </div>
+        </div>
+        <div className="bookmark-cards">
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+        </div>
       </div>
     </div>
   )

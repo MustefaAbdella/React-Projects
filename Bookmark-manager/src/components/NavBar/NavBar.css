@@ -1,5 +1,6 @@
 .navbar {
   height: 60px;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .navbar-wrapper {
@@ -45,6 +46,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+}
+
+.navar-left button:hover {
+  background-color: rgb(1, 135, 135);
 }
 
 .navar-left .profile {
@@ -52,6 +59,7 @@
   width: 30px;
   background-color: aqua;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .navar-left .profile img {

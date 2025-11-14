@@ -69,13 +69,6 @@ const SideBar = () => {
             <div className="individual-tags">
               <span className='tag-name'>
                 <input type="checkbox" />
-                <p>HTML</p>
-              </span>
-              <span className='tags-count'>9</span>
-            </div>
-            <div className="individual-tags">
-              <span className='tag-name'>
-                <input type="checkbox" />
                 <p>JavaScript</p>
               </span>
               <span className='tags-count'>1</span>
