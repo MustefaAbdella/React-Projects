@@ -38,7 +38,7 @@
 }
 
 .home-archive {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +72,7 @@
 }
 
 .tags-category h2 {
-  font-size: 10px;
+  font-size: 12px;
   color: #888;
   margin-bottom: 10px;
 }
@@ -80,7 +80,7 @@
 .tags-category .tags-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
 
 .tags-category .tags-list .individual-tags {
@@ -95,7 +95,7 @@
 }
 
 .tags-category .tags-list .individual-tags {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;

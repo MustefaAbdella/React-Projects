@@ -1,16 +1,34 @@
-# React + Vite
+Using this bookmark manager users should be able to:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Add new bookmarks with a title, description, website URL, and tags
 
-Currently, two official plugins are available:
+* View all their bookmarks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* See bookmark details, including favicon, title, URL, description, tags, view count, last visited date, and date added
 
-## React Compiler
+* Search for bookmarks by title in the search bar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Filter bookmarks by selecting one or multiple tags from the sidebar
 
-## Expanding the ESLint configuration
+* Reset tag filters to view all bookmarks again
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* View archived bookmarks
+
+* Archive bookmarks to remove them from the main view without deleting them
+
+* Pin/unpin bookmarks to keep important ones easily accessible
+
+* Edit existing bookmarks to update their details
+
+* Copy bookmark URLs to the clipboard
+
+* Visit bookmarked websites directly from the app
+
+* Sort bookmarks by "Recently added", "Recently visited", or "Most visited"
+
+* Toggle between light and dark color themes
+
+* View the optimal layout for the interface depending 
+on their device's screen size
+
+* See hover and focus states for all interactive elements on the page

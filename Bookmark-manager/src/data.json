@@ -1,0 +1,20 @@
+{
+  "bookmarks": [
+    {
+      "id": "bm-001",
+      "title": "Github",
+      "url": "https://github.com",
+      "description": "",
+      "tags": [
+        "Tools",
+        "Community",
+        "Git"
+      ],
+      "pinned": false,
+      "isArchived": false,
+      "visitCount": 32,
+      "createdAt": "",
+      "lastVisited": ""
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import SideBar from './SideBar/SideBar'
-import Main from './Main/Main'
+import SideBar from './components/SideBar/SideBar'
+import Main from './components/Main/Main'
+import AddBookmark from './components/AddBookmark/AddBookmark'
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
     <div className="app">
       <SideBar />
       <Main />
+      {/* <AddBookmark /> */}
     </div>
   )
 }

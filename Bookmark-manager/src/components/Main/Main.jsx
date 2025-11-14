@@ -1,8 +1,8 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
 import './Main.css'
-import NavBar from '../components/NavBar/NavBar'
-import Cards from '../components/Cards/Cards'
+import NavBar from '../NavBar/NavBar'
+import Cards from '../Cards/Cards'
 
 const Main = () => {
   return (
