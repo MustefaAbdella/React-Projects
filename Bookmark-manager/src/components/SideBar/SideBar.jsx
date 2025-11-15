@@ -1,6 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 import './SideBar.css'
+import { bookmarks } from '../../data.json'
 const SideBar = () => {
   return (
     <div className='sidebar'>

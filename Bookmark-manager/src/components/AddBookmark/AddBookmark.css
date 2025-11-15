@@ -55,6 +55,7 @@ textarea:focus {
   font-size: 14px;
   font-weight: 600;
   color: rgb(2, 91, 91);
+  cursor: pointer;
 }
 
 .save-btn {
@@ -64,4 +65,5 @@ textarea:focus {
   padding: 8px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }

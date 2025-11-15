@@ -1,19 +1,20 @@
 import { useState } from 'react'
 import './App.css'
 import SideBar from './components/SideBar/SideBar'
-import Main from './components/Main/Main'
+import Home from './components/Home/Home'
 import AddBookmark from './components/AddBookmark/AddBookmark'
+import { TaskProvider, useContextAPI } from './components/ContextAPI'
 
 
 function App() {
 
-
   return (
-    <div className="app">
-      <SideBar />
-      <Main />
-      {/* <AddBookmark /> */}
-    </div>
+    <TaskProvider>
+      <div className="app">
+        <SideBar />
+        <Home />
+      </div>
+    </TaskProvider>
   )
 }
 

@@ -1,11 +1,15 @@
 import React from 'react'
 import { Icon } from '@iconify/react'
-import './Main.css'
+import './Home.css'
 import NavBar from '../NavBar/NavBar'
 import Cards from '../Cards/Cards'
-import { bookmarks } from '../../data.json'
+import { useContextAPI } from '../ContextAPI'
+import AddBookmark from '../AddBookmark/AddBookmark'
 
-const Main = () => {
+const Home = () => {
+
+  const { query, bookmarks, showAddBookmark } = useContextAPI();
+
   return (
     <div className='main-content'>
       <NavBar />
@@ -17,13 +21,16 @@ const Main = () => {
           </div>
         </div>
         <div className="bookmark-cards">
-          {bookmarks.map((bookmark) => (
-            <Cards key={bookmark.id} {...bookmark} />
-          ))}
+          {bookmarks
+            .filter((bookmark) => bookmark.title.toLowerCase().includes(query))
+            .map((bookmark) => (
+              <Cards key={bookmark.id} {...bookmark} />
+            ))}
         </div>
       </div>
+      {showAddBookmark && <AddBookmark />}
     </div>
   )
 }
 
-export default Main
+export default Home
